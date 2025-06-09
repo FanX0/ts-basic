@@ -1,4 +1,4 @@
-describe("Tipe Data", () => {
+describe("Tipe Data Variable", () => {
     it ("should must declared", () => {
 
         const name: string = "Farid";
