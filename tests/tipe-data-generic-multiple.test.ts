@@ -23,4 +23,14 @@ describe ("Generic Multiple", () => {
         expect(triple.second).toBe("value");
         expect(triple.third).toBe(true);
     })
+
+    it("should must Generic Multiple", () => {
+        class Entry<K, V> {
+            constructor(public key: K, public value: V) {}
+        }
+       const entry = new Entry(1, "value");
+        console.info(entry);
+        expect(entry.key).toBe(1);
+        expect(entry.value).toBe("value");
+    })
 })
