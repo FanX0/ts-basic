@@ -19,6 +19,14 @@ describe("Tipe Data Generic", () => {
             constructor(value: T) {
                 this.value = value;
             }
+
+            get():T  {
+                return this.value;
+            }
+
+            set (value: T) {
+                this.value = value;
+            }
         }
 
         const dataNumber = new GenericData<number>(123);
